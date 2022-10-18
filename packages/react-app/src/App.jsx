@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Button, Col, Menu, Row } from "antd";
 
 import "antd/dist/antd.css";
@@ -177,7 +178,7 @@ function App(props) {
   );
 
   // keep track of a variable from the contract in the local React state:
-  const purpose = useContractReader(readContracts, "YourContract", "purpose", [], localProviderPollingTime);
+  const purpose = useContractReader(readContracts, "Project1", "purpose", [], localProviderPollingTime);
 
   /*
   const addressFromENS = useResolveName(mainnetProvider, "austingriffith.eth");
@@ -330,7 +331,7 @@ function App(props) {
             */}
 
           <Contract
-            name="YourContract"
+            name="Project1"
             price={price}
             signer={userSigner}
             provider={localProvider}
